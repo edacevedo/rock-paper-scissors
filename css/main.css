@@ -1,4 +1,81 @@
 body {
     margin: 0;
-    background-color: darkcyan;
+    background-color: #090b2a;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: -webkit-fill-available;
+    width: 100%;
+}
+
+.lost {
+    color: red;
+}
+.win {
+    color: green;
+}
+.tie {
+    color: grey;
+}
+
+.dash {
+    flex: 3;
+}
+
+.players {
+    display: flex;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: white;
+}
+
+.players div, .points div, .choices div {
+    text-align: center;
+    width: -webkit-fill-available;
+}
+
+.points{
+    display: flex;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.choices {
+    padding: 6rem 1rem;
+    display: flex;
+}
+
+.choices .dash-icon {
+    font-size: 8rem;
+    color: darkgoldenrod;
+}
+
+.result-message {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.player-options {
+    font-size: 4rem; 
+    color: White;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    border: 1px solid #ccc;
+    align-items: center;
+    margin: 1rem 10rem;
+    border-radius: 3rem;
+}
+
+.icon {
+    transition: font-size .3s;
+}
+
+.icon:hover {
+    font-size: 5rem;
+    cursor: pointer;
+    color: darkgoldenrod;
 }

@@ -7,8 +7,50 @@
     <title>Rock Paper Scissors</title>
     <script src="./src/main.js"></script>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/3764a1c807.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    
+
+    <div class="dash">
+       <div class="players">
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+            </div>
+       </div>
+       <div class="points">
+            <div id="computerHistory">
+                <i class="fa-solid "></i>
+            </div>
+            
+            <div id="playerHistory">
+                <i class="fa-solid"></i>
+            </div>
+        </div>
+        <div class="choices">
+            <div id="computerChoice">
+                <i class="fa-solid fa-question dash-icon"></i>
+            </div>
+            
+            <div id="playerChoice">
+                <i class="fa-solid fa-question dash-icon"></i>
+            </div>
+        </div>
+        <p id="resultMessage" class="result-message"></p>
+    </div>
+    <div class="player-options">
+            <div>
+                <i data-user-option="rock" class="fa-solid fa-hand-back-fist icon"></i>
+            </div>
+            <div>
+                <i data-user-option="paper" class="fa-solid fa-hand icon"></i>
+            </div>
+            <div>
+                <i data-user-option="scissors" class="fa-solid fa-hand-scissors icon"></i>
+            </div>
+    </div>
 </body>
 </html>
