@@ -62,12 +62,15 @@ body {
     color: White;
     flex: 1;
     display: flex;
-    justify-content: center;
-    gap: 5rem;
     border: 1px solid #ccc;
     align-items: center;
-    margin: 1rem 10rem;
+    margin: 1rem 14rem;
     border-radius: 3rem;
+}
+
+.player-options div {
+    flex: 1;
+    text-align: center;
 }
 
 .icon {
