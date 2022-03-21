@@ -10,10 +10,9 @@ const ICONS = {
     scissors: "hand-scissors"
 }
 
-const ROUNDS = 5;
+const WINNER_POINTS = 5;
 
-let round = 0,
-    playerPoints = 0,
+let playerPoints = 0,
     computerPoints = 0,
     playerHistory = [],
     computerHistory = [];
@@ -95,7 +94,7 @@ function paintHistoricalResults() {
 }
 
 function validateEndGame() {
-    if (round === 5) {
+    if (playerPoints === WINNER_POINTS || computerPoints === WINNER_POINTS) {
         if (playerPoints === computerPoints) {
             resultMessage = "It's a tie!"
         } else if (playerPoints > computerPoints) {
@@ -124,7 +123,6 @@ function onClickUserOption(params) {
         paintChoices(computerSelection, playerSelection);
         document.getElementById("resultMessage").innerHTML = resultMessage;
         paintHistoricalResults();
-        round += 1;
         validateEndGame();
    
 }
